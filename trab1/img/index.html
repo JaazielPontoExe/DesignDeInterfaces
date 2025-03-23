@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliacao 01 - Design de Interfaces</title>
+</head>
+<body>
+    <header>
+
+        <h1>Avaliacao 01 - Design de Interfaces</h1>
+        
+        <p>
+            <b><i>Aplicação dos Fundamentos de HTML5.</i></b>
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Menu</li>
+            <li>Principal</li>
+            <li>Produtos</li>
+            <li>Serviços</li>
+            <li>Sobre</li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <!-- Link para pag do IF -->
+
+        <a href="https://ifrs.edu.br/" target="_blank">
+            <img src="img/ifrs.png" alt="Homepage IFRS" width="150">
+        </a>
+        
+        <!-- Imagem Formatada -->
+        
+        <figure>
+            <img src="img/tads.png" alt="Foto do Curso" width="300">
+            <figcaption>Imagem do Curso TADS do IFRS de Rio grande</figcaption>
+        </figure>
+
+        <!-- Formulário -->
+
+        <form>
+            <fieldset>
+                <legend>Formulário</legend>
+
+                <label for="nome">Nome:</label> 
+                <input type="text" id="nome"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}"><br>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data"><br>
+
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" id="arquivo"><br><br>
+
+                <button type="submit">Enviar</button>
+
+            </fieldset>
+        
+        </form>
+
+        <!-- Lista -->
+
+        <ol>
+
+            <li>Frutas 
+                <ul>
+                    <li>Banana</li>
+                    <li>Maça</li>
+                    <li>Abacate</li>
+                </ul>
+            </li>
+            
+            <li>Legumes
+                <ul>
+                    <li>Cebola</li>
+                    <li>Pimentão</li>
+                </ul>
+            </li>
+            
+            <li>Cereais
+                <ul>
+                    <li>Arroz</li>
+                    <li>Feijão</li>
+                </ul>
+            </li>
+
+        </ol>
+        
+        <!-- Tabela -->
+        
+        <table>
+
+            <caption><b>Lucro por mês</b></caption>
+
+            <thead>
+
+                <tr>
+                    <th>Mês</th>
+                    <th colspan="2">Frutas</th>
+                </tr> 
+                
+                <tr>
+                    <th></th>
+                    <th>Banana</th>
+                    <th>Maça</th>
+                </tr>
+
+            </thead>
+            
+            <tbody>
+
+                <tr>
+                    <td>Janeiro</td>
+                    <td>100</td>
+                    <td>50</td>
+                </tr> 
+                
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>120</td>
+                    <td>100</td>
+                </tr>
+                
+                <tr>
+                    <td>Março</td>
+                    <td>120</td>
+                    <td>150</td>
+                </tr> 
+                
+                <tr>
+                    <td>Total</td>
+                    <td>340</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- iframe -->
+
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/K4TOrB7at0Y" 
+            title="Vídeo do YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </main>
+    <footer>
+        <p>Endereço: Rua do Crepúsculo, 789 - Jardim das Nuvens, Cidade dos Ventos - CEP: 12345-678</p>
+        <p>Telefone: (11) 99888-7777</p>
+        <p>© 2025 LuminaTech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
