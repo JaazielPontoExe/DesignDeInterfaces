@@ -1,0 +1,14 @@
+body {
+    background-color: darkslategray;
+    font-family: system-ui;
+    margin : 1%;
+    padding : 0.5%;
+
+    & header {
+        background-color: white;
+    } & main {
+        background-color: white;
+    } & p.oside {
+        text-align: right;
+    }
+}
