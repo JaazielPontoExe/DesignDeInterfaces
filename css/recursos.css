@@ -1,24 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-
-  --cor-principal: #FFFEFE;
-  --cor-destaque: #1C1A1B;
-  --cor-primaria: #2C70F6;
-  --cor-secundaria: #F8D245;
-  --cor-terciaria: #F1B8D8;
-
-  --borda-espessura: 4px;
-  --borda-espessura-botao: 3px;
-  --borda: var(--borda-espessura) solid var(--cor-destaque);
-  --borda-botao: var(--borda-espessura-botao) solid var(--cor-destaque);
-
-  --pad-cantos: 1rem 2rem;
-
-  --fonte-principal: 'Public Sans', sans-serif;
-  --cor-texto: #111;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
