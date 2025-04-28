@@ -3,9 +3,13 @@ html {
 	margin: 0;
 	padding: 0;
 	border: 0;
-  }
+}
   *,
   *:before,
   *:after {
 	box-sizing: inherit;
+} html * {
+	margin: 0em;
+	padding: 0em;
+	border: 0em;
 }

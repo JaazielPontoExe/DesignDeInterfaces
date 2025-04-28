@@ -1,0 +1,20 @@
+@import "./recursos.css";
+
+.aulas {
+    display: flex;
+    flex-flow: column nowrap;
+  
+    border: var(--borda-botao);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  
+    box-shadow: 5px 5px 0px var(--cor-texto-principal);
+  
+  } .aulas h3 {
+    background-color: var(--cor-azul);
+    padding: .3rem;
+    border-bottom: var(--borda-botao);
+  
+  } article {
+    padding: .5em 2em;
+  }
