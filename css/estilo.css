@@ -106,7 +106,7 @@ section .titulo img {
 }
 
 section .titulo p {
-    flex: 1 0 500px;
+    flex: 1 0 300px;
     align-self: self-start;
 }
 
