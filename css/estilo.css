@@ -72,7 +72,7 @@ section {
     display: flex;
     flex-flow: column wrap;
     gap: 1em;
-    scroll-margin-top: 8em;
+    scroll-margin-top: 10em;
 
 }
 
