@@ -1,0 +1,344 @@
+/* Reset e recursos */
+@import "./recursos.css";
+@import "./reset.css";
+
+/* Corpo */
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-amarelo);
+    color: var(--cor-texto-principal);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-azul);
+    border-bottom: var(--borda);
+
+    flex-flow: row wrap;
+
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+} header, .header1 {
+    display: flex;
+    justify-content: space-between;
+} .header1 {
+    flex-flow: row wrap;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--cor-texto-principal);
+}
+
+/* Navegação */
+nav {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0.3em 0.6em;
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-azul);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+}
+
+/* Seção */
+section {
+    background-color: var(--cor-fundo);
+    box-shadow: 5px 5px var(--cor-texto-principal);
+    border: var(--borda);
+    padding: 1em;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+    scroll-margin-top: 10em;
+
+}
+
+section h2 {
+    background-color: var(--cor-rosa);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: -1rem -1rem 1rem;
+    padding: .3em .5em;
+    border-radius: 1.5rem 1.5rem 0em 0em;
+    border-bottom: var(--borda-botao);
+}
+
+section h3 {
+    padding: .5em 0em .25em;
+    border-bottom: var(--borda-botao);
+}
+
+/* Título da Seção */
+section .titulo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+section .titulo img {
+    max-height: 10em;
+    min-height: 1em;
+    width: auto;
+}
+
+section .titulo p {
+    flex: 1 0 200px;
+    align-self: self-start;
+}
+
+/* Conteúdo da Seção */
+section .conteudo {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+}
+
+section .conteudo a {
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+}
+
+section .conteudo a:hover {
+    text-decoration: underline;
+}
+
+section .conteudo article {
+    display: flex;
+    flex-flow: column wrap;
+    gap: .5em;
+}
+
+/* Links */
+section .links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+
+} section .links h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+section .links a {
+    flex: 1 0 16em;
+    padding: .5em;
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    border: var(--borda-botao);
+    border-radius: .7em;
+}
+
+section .links a:hover {
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-fundo);
+}
+
+/* Rodapé */
+footer {
+    padding: 2em 1em;
+    background-color: var(--cor-rosa);
+    border-top: var(--borda);
+    text-align: center;
+    color: var(--cor-texto-principal);
+    font-size: 1em;
+}
+
+footer h2 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--cor-link-hover);
+    text-decoration: underline;
+}
+
+#menu-toggle {
+    display: none;
+} #menu-open, #menu-close {
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    #menu-open {
+        display: block;
+    }#menu-toggle:checked ~ #menu-open {
+        display: none;
+    }#menu-toggle:checked ~ #menu-close {
+        display: block;
+    } nav {
+        display: none;
+    } .header1:has(#menu-toggle:checked) + nav {
+        display: flex;
+        flex-flow: column wrap;
+    } header {
+        flex-flow: column wrap;
+    }
+}
+
+#form-grid .titulo {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.formulario-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+@media (max-width: 900px) {
+    .formulario-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-grid {
+    display: grid;
+    gap: 1em;
+    padding: 2em;
+    border: var(--borda);
+    border-radius: 1em;
+    background-color: var(--cor-fundo);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.05);
+}
+
+.form-grid input,
+.form-grid textarea,
+.form-grid select {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: white;
+}
+
+.form-grid fieldset {
+    border: none;
+    padding: 0.5em 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.form-grid legend {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-grid button {
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: var(--cor-azul);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.form-grid button:hover {
+    background-color: var(--cor-texto-principal);
+}
+
+.form-grid input[type="checkbox"],
+.form-grid input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+.grade-galeria {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas:
+      "img1 img2 img5 img5"
+      "img3 img3 img5 img5"
+      "img4 img4 img5 img5"
+      "img4 img4 img5 img5";
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-image: var(--img-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    grid-area: var(--area);
+}
+
+
+figcaption {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.3em;
+}
+  
+@media (max-width: 767px) {
+    .grade-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 180px);
+        grid-template-areas:
+        "img1 img2"
+        "img3 img3"
+        "img4 img4"
+        "img4 img4"
+        "gabarito gabarito"
+        "gabarito gabarito";
+    }
+}
