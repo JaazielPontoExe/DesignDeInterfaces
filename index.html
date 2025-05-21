@@ -11,18 +11,29 @@
 
 <body>
     <header>
-        <h1>Design de Interfaces</h1>
+        <div class="header1">
+            <h1>Design de Interfaces</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menu-open">&#9776</label>
+            <label for="menu-toggle" id="menu-close">&#10005</label>
+        </div>
         <nav>
-            <a href="#HTML">HTML</a>
-            <a href="#CSS">CSS</a>
+            <a href="#conteudo">Conteudos</a>
+            <a href="#links-uteis">Links úteis</a>
+            <a href="#grid-layout">Formulários Grid</a>
+            <a href="#galeria-grid">Galeria Grid</a>
         </nav>
     </header>
 
     <main>
-        <section id="HTML">
 
-            <h2>HTML</h2>
+        <section id="conteudo">
+            <h2>Conteúdo</h2>
+            <p>
+                Nesta seção, reunimos os principais conteúdos abordados durante a disciplina de Design de Interfaces. Apresentamos os fundamentos do HTML e do CSS com explicações detalhadas e exemplos práticos, permitindo que você compreenda a estrutura e a estilização de páginas web. A proposta é fornecer um guia progressivo e organizado, facilitando a assimilação do conhecimento por meio das aulas desenvolvidas.
+            </p>
 
+            <h3>HTML</h3>
             <div class="titulo">
                 <img src="./img/html-5.png" alt="Logo HTML 5">
                 <p>
@@ -30,192 +41,270 @@
                 </p>
             </div>
 
-            <h3>Aulas</h3>
-
+            <h4>Aulas</h4>
             <div class="conteudo">
-
                 <article>
-                    <h4><a href="#">Introdução ao HTML e Ferramentas</a></h4>
+                    <h5><a href="#">Introdução ao HTML e Ferramentas</a></h5>
                     <p>
                         Nesta aula introdutória à disciplina de Desenvolvimento Web, são abordados conceitos fundamentais sobre o HTML e suas ferramentas essenciais. O uso de ferramentas como o VS Code, um editor de código eficiente, o GitHub, plataforma para versionamento e colaboração, e o W3C Validator, que valida o código HTML de acordo com os padrões da web, é explicado. Além disso, são apresentadas as principais tags do HTML, incluindo <code>&lt;html&gt;</code>, para definir o início do documento HTML, <code>&lt;head&gt;</code>, para informações meta e de configuração, <code>&lt;body&gt;</code>, que contém o conteúdo da página, <code>&lt;p&gt;</code>, para parágrafos de texto, e <code>&lt;ul&gt;</code>, para listas não ordenadas.
                     </p>
                 </article>
-                
+
                 <article>
-                    <h4><a href="#">Imagens, Links e Formulários</a></h4>
+                    <h5><a href="#">Imagens, Links e Formulários</a></h5>
                     <p>
                         Esta seção explora o uso de imagens, links e formulários em HTML. A tag <code>&lt;img&gt;</code> é abordada para a inclusão de imagens, com destaque para a utilização de caminhos relativos. A tag <code>&lt;a&gt;</code> é explicada para criar links de navegação entre páginas. Também são detalhados os elementos essenciais para a criação de formulários, como o <code>&lt;input&gt;</code>, que permite entradas de dados, o <code>&lt;select&gt;</code>, para menus suspensos, o <code>&lt;textarea&gt;</code>, para áreas de texto, e o <code>&lt;button&gt;</code>, para botões interativos dentro de um formulário.
                     </p>
-                </article>                
-                
+                </article>
             </div>
 
-            <h3>Links úteis</h3>
-
-            <div class="links">
-                <a href="https://www.w3schools.com/html/default.asp" target="_blank">
-                    <h4>W3Schools HTML</h4>
-                    <p>Tutorial interativo com exemplos práticos.</p>
-                </a>
-
-                <a href="http://overapi.com/html" target="_blank">
-                    <h4>OverAPI HTML</h4>
-                    <p>Referência rápida de tags e atributos.</p>
-                </a>
-
-                <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
-                    <h4>Especificação Oficial HTML</h4>
-                    <p>Documentação técnica do HTML pela WHATWG/W3C.</p>
-                </a>
-
-                <a href="http://pt-br.html.net/tutorials/html/" target="_blank">
-                    <h4>HTML.net (Português)</h4>
-                    <p>Tutorial básico em português.</p>
-                </a>
-
-                <a href="https://www.devmedia.com.br/html-basico-codigos-html/16596" target="_blank">
-                    <h4>DevMedia - HTML Básico</h4>
-                    <p>Artigo introdutório com códigos explicados.</p>
-                </a>
-
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5" target="_blank">
-                    <h4>MDN HTML5</h4>
-                    <p>Referência da Mozilla para desenvolvedores.</p>
-                </a>
-
-                <a href="https://validator.w3.org/" target="_blank">
-                    <h4>Validador HTML W3C</h4>
-                    <p>Ferramenta para validar o código HTML.</p>
-                </a>
-
-                <a href="https://github.com/" target="_blank">
-                    <h4>GitHub</h4>
-                    <p>Hospedagem e versionamento de código.</p>
-                </a>              
-            </div>
-        </section>
-
-        <section id="CSS">
-
-            <h2>CSS</h2>
-
+            <h3>CSS</h3>
             <div class="titulo">
                 <img src="./img/css.png" alt="Logo CSS 5">
-
                 <p>
                     Nesta seção, abordamos os fundamentos do CSS, a linguagem de estilo amplamente utilizada para definir a aparência visual das páginas web. O CSS permite controlar o layout, as cores, as fontes, os espaçamentos e outros aspectos visuais, separando a estrutura (HTML) da apresentação. Vamos examinar os conceitos principais do CSS, incluindo seletores, propriedades e valores, além de aprender sobre o modelo de caixa (Box Model) e o controle do posicionamento de elementos, o que é essencial para criar designs atraentes e responsivos que funcionem bem em diferentes dispositivos e tamanhos de tela.
                 </p>
             </div>
 
-            <h3>Aulas</h3>
-
+            <h4>Aulas</h4>
             <div class="conteudo">
-
                 <article>
-                    <h4><a href="#">Seletores, Texto e Box Model</a></h4>
+                    <h5><a href="#">Seletores, Texto e Box Model</a></h5>
                     <p>
                         Esta aula oferece uma introdução ao uso de CSS para estilização de páginas HTML. São abordados os principais seletores, que permitem a aplicação de estilos específicos a elementos, classes e IDs. Também é discutida a formatação de texto, incluindo o controle de fontes, tamanhos, espaçamento e alinhamento. Além disso, é explicado o conceito de Box Model, fundamental para entender como os elementos são exibidos, incluindo o modelo de caixas com propriedades como <code>padding</code>, <code>border</code>, <code>margin</code> e o conteúdo do próprio elemento.
                     </p>
                 </article>
-                
+
                 <article>
-                    <h4><a href="#">Posicionamento de Elementos</a></h4>
+                    <h5><a href="#">Posicionamento de Elementos</a></h5>
                     <p>
                         Esta seção trata do posicionamento de elementos na página usando CSS. São exploradas as propriedades <code>display</code>, que define o tipo de exibição de um elemento (como <code>block</code>, <code>inline</code>, etc.), e <code>position</code>, que controla o posicionamento dos elementos na tela, com valores como <code>static</code>, <code>relative</code>, <code>absolute</code> e <code>fixed</code>. Também são abordadas as propriedades <code>z-index</code>, que define a sobreposição de elementos, e <code>overflow</code>, que gerencia o comportamento de conteúdo que ultrapassa os limites de um contêiner.
                     </p>
                 </article>
-                
+
                 <article>
-                    <h4><a href="#">Flexbox e Responsividade</a></h4>
+                    <h5><a href="#">Flexbox e Responsividade</a></h5>
                     <p>
                         Esta aula introduz o modelo Flexbox, uma poderosa ferramenta para a criação de layouts flexíveis e responsivos. São abordadas as propriedades essenciais do Flexbox, como <code>flex-direction</code>, que define a direção dos itens dentro de um contêiner flexível, <code>justify-content</code>, que controla o alinhamento dos itens ao longo do eixo principal, e <code>align-items</code>, que gerencia o alinhamento ao longo do eixo transversal. A aula também explora como utilizar o Flexbox para criar designs responsivos, adaptáveis a diferentes tamanhos de tela.
                     </p>
                 </article>
-                              
+                </div>
+        </section>
 
-            </div>
-
-            <h3>Links úteis</h3>
+        <section id="links-uteis">
+            <h2>Links úteis</h2>
+            <p>
+                Abaixo estão reunidos diversos recursos complementares para aprofundar seus estudos em HTML e CSS. Estes links direcionam para tutoriais, documentações oficiais e ferramentas de referência amplamente utilizadas por desenvolvedores. Consulte-os sempre que quiser reforçar seu aprendizado ou esclarecer dúvidas sobre qualquer tópico abordado nas aulas.
+            </p>
 
             <div class="links">
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                    <h5>W3Schools HTML</h5>
+                    <p>Tutorial interativo com exemplos práticos.</p>
+                </a>
+
+                <a href="http://overapi.com/html" target="_blank">
+                    <h5>OverAPI HTML</h5>
+                    <p>Referência rápida de tags e atributos.</p>
+                </a>
+
+                <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
+                    <h5>Especificação Oficial HTML</h5>
+                    <p>Documentação técnica do HTML pela WHATWG/W3C.</p>
+                </a>
+
+                <a href="http://pt-br.html.net/tutorials/html/" target="_blank">
+                    <h5>HTML.net (Português)</h5>
+                    <p>Tutorial básico em português.</p>
+                </a>
+
+                <a href="https://www.devmedia.com.br/html-basico-codigos-html/16596" target="_blank">
+                    <h5>DevMedia - HTML Básico</h5>
+                    <p>Artigo introdutório com códigos explicados.</p>
+                </a>
+
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5" target="_blank">
+                    <h5>MDN HTML5</h5>
+                    <p>Referência da Mozilla para desenvolvedores.</p>
+                </a>
+
+                <a href="https://validator.w3.org/" target="_blank">
+                    <h5>Validador HTML W3C</h5>
+                    <p>Ferramenta para validar o código HTML.</p>
+                </a>
+
+                <a href="https://github.com/" target="_blank">
+                    <h5>GitHub</h5>
+                    <p>Hospedagem e versionamento de código.</p>
+                </a>
+
                 <a href="https://www.w3schools.com/css/" target="_blank">
-                    <h4>W3Schools CSS</h4>
+                    <h5>W3Schools CSS</h5>
                     <p>Tutorial completo com exemplos de CSS.</p>
                 </a>
                 
                 <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
-                    <h4>MDN CSS</h4>
+                    <h5>MDN CSS</h5>
                     <p>Documentação detalhada da Mozilla.</p>
                 </a>
                 
                 <a href="http://overapi.com/css" target="_blank">
-                    <h4>OverAPI CSS</h4>
+                    <h5>OverAPI CSS</h5>
                     <p>Referência rápida para atributos e seletores.</p>
                 </a>
                 
                 <a href="https://cssreference.io/" target="_blank">
-                    <h4>CSS Reference</h4>
+                    <h5>CSS Reference</h5>
                     <p>Visual com exemplos de propriedades CSS.</p>
                 </a>
                 
                 <a href="http://www.w3.org/Style/CSS/" target="_blank">
-                    <h4>W3C CSS</h4>
+                    <h5>W3C CSS</h5>
                     <p>Referência oficial das especificações CSS.</p>
                 </a>
                 
                 <a href="http://pt-br.html.net/tutorials/css/" target="_blank">
-                    <h4>HTML.net CSS</h4>
+                    <h5>HTML.net CSS</h5>
                     <p>Tutorial introdutório em português.</p>
                 </a>
                 
                 <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">
-                    <h4>Seletores CSS – W3Schools</h4>
+                    <h5>Seletores CSS – W3Schools</h5>
                     <p>Lista prática dos seletores CSS mais comuns.</p>
                 </a>
                 
                 <a href="https://flukeout.github.io/" target="_blank">
-                    <h4>FlukeOut (Jogo de Seletores)</h4>
+                    <h5>FlukeOut (Jogo de Seletores)</h5>
                     <p>Jogo interativo para aprender seletores CSS.</p>
                 </a>
                 
                 <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
-                    <h4>CSS-Tricks – Guia Flexbox</h4>
+                    <h5>CSS-Tricks – Guia Flexbox</h5>
                     <p>Guia visual completo sobre Flexbox.</p>
                 </a>
                 
                 <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">
-                    <h4>Flexbox – W3Schools</h4>
+                    <h5>Flexbox – W3Schools</h5>
                     <p>Exemplos práticos para aplicação de Flexbox.</p>
                 </a>
                 
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox" target="_blank">
-                    <h4>MDN Flexbox</h4>
+                    <h5>MDN Flexbox</h5>
                     <p>Documentação oficial da Mozilla sobre Flexbox.</p>
                 </a>
                 
                 <a href="https://caniuse.com/" target="_blank">
-                    <h4>Can I Use</h4>
+                    <h5>Can I Use</h5>
                     <p>Compatibilidade de recursos CSS por navegador.</p>
                 </a>
                 
                 <a href="https://gs.statcounter.com/" target="_blank">
-                    <h4>StatCounter</h4>
+                    <h5>StatCounter</h5>
                     <p>Estatísticas de navegadores e resoluções.</p>
                 </a>
                 
                 <a href="https://flexboxfroggy.com/" target="_blank">
-                    <h4>Flexbox Froggy</h4>
+                    <h5>Flexbox Froggy</h5>
                     <p>Jogo para aprender Flexbox com desafios CSS.</p>
                 </a>
             </div>
         </section>
-    </main>
 
+        <section id="form-grid">
+            <h2>Formulários com CSS Grid</h2>
+            <p>Exemplos de formulários responsivos usando HTML semântico e layout com CSS Grid. Ambos utilizam ao menos 5 campos, incluindo tipos variados e acessibilidade com fieldsets e labels.</p>
+        
+            <div class="formulario-grid">
+                <form class="form-grid" id="form-contato">
+                    <h3>Formulário de Contato</h3>
+        
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(99) 99999-9999" required>
+        
+                    <label for="data">Data do Contato:</label>
+                    <input type="date" id="data" name="data">
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+        
+                <!-- Formulário 2: Cadastro -->
+                <form class="form-grid" id="form-cadastro">
+                    <h3>Formulário de Cadastro</h3>
+        
+                    <label for="nome-cadastro">Nome:</label>
+                    <input type="text" id="nome-cadastro" name="nome-cadastro" required>
+        
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" name="email-cadastro" required>
+        
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+        
+                    <fieldset>
+                        <legend>Gênero:</legend>
+                        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+                        <label><input type="radio" name="genero" value="outro"> Outro</label>
+                    </fieldset>
+        
+                    <label for="interesses">Interesses:</label>
+                    <select id="interesses" name="interesses" multiple>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="ux">UX Design</option>
+                    </select>
+        
+                    <label>
+                        <input type="checkbox" name="termos" required> Aceito os termos de uso
+                    </label>
+        
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria com Grid</h2>
+            <p>Este é um exercício prático de aplicação do CSS Grid. A galeria abaixo demonstra como organizar imagens em uma grade responsiva, utilizando diferentes áreas e posicionamentos definidos por grid.</p>
+        
+            <div class="grade-galeria">
+                <figure class="item" style="--area: img1; --img-url: url('../img/img1.jpg')">
+                    <figcaption>Imagem 1 posicionada com Grid</figcaption>
+                </figure>
+                <figure class="item" style="--area: img2; --img-url: url('../img/img2.jpg')">
+                    <figcaption>Imagem 2 posicionada com Grid</figcaption>
+                </figure>
+                <figure class="item" style="--area: img3; --img-url: url('../img/img3.jpg')">
+                    <figcaption>Imagem 3 posicionada com Grid</figcaption>
+                </figure>
+                <figure class="item" style="--area: img4; --img-url: url('../img/img4.jpg')">
+                    <figcaption>Imagem 4 posicionada com Grid</figcaption>
+                </figure>
+                <figure class="item" style="--area: img5; --img-url: url('../img/img5.jpg')">
+                    <figcaption>Imagem 5 posicionada com Grid</figcaption>
+                </figure>
+            </div>            
+        </section>
+        
+        
+
+    </main>
     <footer>
         <h2>by Jaaziel Machado</h2>
         <p>E-mail: <a href="mailto:2024018766@aluno.riogrande.ifrs.edu.br">2024018766@aluno.riogrande.ifrs.edu.br</a></p>
         <p>GitHub: <a href="https://github.com/JaazielPontoExe" target="_blank">JaazielPontoExe</a></p>
     </footer>
+</body>
 </body>
 
 </html>
