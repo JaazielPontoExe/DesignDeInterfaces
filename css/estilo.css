@@ -1,17 +1,13 @@
-/* Reset e recursos */
 @import "./recursos.css";
 @import "./reset.css";
 
-
-
-/* Corpo */
 body {
     font-family: var(--fonte-principal);
     background-color: var(--cor-amarelo);
     color: var(--cor-texto-principal);
+    padding-top: 70px;
 }
 
-/* Main */
 main {
     max-width: 1200px;
     margin: auto;
@@ -21,7 +17,6 @@ main {
     gap: 1em;
 }
 
-/* Seção */
 section {
     background-color: var(--cor-fundo);
     box-shadow: 5px 5px var(--cor-texto-principal);
@@ -34,7 +29,6 @@ section {
     flex-flow: column wrap;
     gap: 1em;
     scroll-margin-top: 10em;
-
 }
 
 section h2 {
@@ -52,7 +46,6 @@ section h3 {
     border-bottom: var(--borda-botao);
 }
 
-/* Título da Seção */
 section .titulo {
     display: flex;
     flex-flow: row wrap;
@@ -71,7 +64,6 @@ section .titulo p {
     align-self: self-start;
 }
 
-/* Conteúdo da Seção */
 section .conteudo {
     display: flex;
     flex-flow: column wrap;
@@ -93,13 +85,13 @@ section .conteudo article {
     gap: .5em;
 }
 
-/* Links */
 section .links {
     display: flex;
     flex-flow: row wrap;
     gap: 1em;
+}
 
-} section .links h4 {
+section .links h4 {
     font-size: 1em;
     font-weight: bold;
 }
@@ -118,7 +110,6 @@ section .links a:hover {
     color: var(--cor-fundo);
 }
 
-/* Rodapé */
 footer {
     padding: 2em 1em;
     background-color: var(--cor-rosa);
@@ -245,7 +236,6 @@ footer a:hover {
     grid-area: var(--area);
 }
 
-
 figcaption {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -256,31 +246,27 @@ figcaption {
 }
 
 .navbar.bg-dark {
-    background-color: var(--cor-azul) !important; /* !important força a sobreposição */
+    background-color: var(--cor-azul) !important;
     border-bottom: var(--borda);
 }
 
-/* Cor do título do site ("Design de Interfaces") */
 .navbar .navbar-brand {
     color: var(--cor-texto-principal);
-    font-weight: 800; /* Deixando a fonte mais forte como no seu h1 original */
+    font-weight: 800;
 }
 
-/* Estilo dos links ("Conteúdos", "Links úteis", etc.) */
 .navbar .nav-link {
     color: var(--cor-texto-principal);
     font-weight: bold;
-    font-size: 1.1em; /* Ajuste o tamanho se desejar */
+    font-size: 1.1em;
     padding: 0.5em 1em !important;
 }
 
-/* Efeito ao passar o mouse sobre os links */
 .navbar .nav-link:hover {
-    color: var(--cor-texto-principal); /* Mantém a cor do texto */
-    text-decoration: underline; /* Adiciona o sublinhado como era antes */
+    color: var(--cor-texto-principal);
+    text-decoration: underline;
 }
 
-/* Mudar a cor do link ATIVO (a seção que está visível na tela) */
 .navbar .nav-link.active {
     color: var(--cor-fundo);
     background-color: var(--cor-texto-principal);
@@ -288,22 +274,13 @@ figcaption {
     text-decoration: none;
 }
 
-/* Cor do ícone "hambúrguer" em telas pequenas */
 .navbar-dark .navbar-toggler-icon {
-    /* O ícone do Bootstrap é uma imagem SVG, então usamos 'filter' para mudar a cor. */
-    /* Este filtro complexo transforma a cor branca padrão em preta. */
     filter: invert(1) sepia(1) saturate(0) hue-rotate(180deg) brightness(0.5);
 }
 
-/* Cor da borda do botão "hambúrguer" */
 .navbar-dark .navbar-toggler {
     border-color: var(--cor-texto-principal);
     border-width: 2px;
-}
-
-body {
-    /* Ajuste este valor se o seu menu for maior ou menor */
-    padding-top: 70px;
 }
 
 @media screen and (max-width: 900px) {
@@ -352,6 +329,7 @@ body {
 
 .navbar-toggler {
     border: none;
-} .navbar-toggler:focus {
+}
+.navbar-toggler:focus {
     box-shadow: none;
 }
