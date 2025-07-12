@@ -33,17 +33,29 @@
 
 <body>
     <header>
-        <div class="header1">
-            <h1>Design de Interfaces</h1>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" id="menu-open">&#9776;</label>
-            <label for="menu-toggle" id="menu-close">&#10005;</label>
-        </div>
-        <nav>
-            <a href="#conteudo">Conteudos</a>
-            <a href="#links-uteis">Links úteis</a>
-            <a href="#form-grid">Formulários Grid</a>
-            <a href="#galeria">Galeria Grid</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Design de Interfaces</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conteudo">Conteúdos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#links-uteis">Links úteis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#form-grid">Formulários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -325,6 +337,8 @@
         <p>E-mail: <a href="mailto:2024018766@aluno.riogrande.ifrs.edu.br">2024018766@aluno.riogrande.ifrs.edu.br</a></p>
         <p>GitHub: <a href="https://github.com/JaazielPontoExe" target="_blank">JaazielPontoExe</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
